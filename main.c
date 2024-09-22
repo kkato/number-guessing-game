@@ -12,7 +12,7 @@ int main() {
     printf("1から100までの数を当ててください。\n");
 
     // 正解するまで繰り返す
-    do {
+    while (guess != target) {
         printf("数を入力してください: ");
         scanf("%d", &guess);
 
@@ -23,7 +23,7 @@ int main() {
         } else {
             printf("正解です！\n");
         }
-    } while (guess != target);
+    }
 
     return 0;
 }
