@@ -5,23 +5,23 @@
 int main() {
     int target, guess;
 
-    // 乱数の種を設定
+    // Set the seed for random number generation
     srand(time(0));
-    target = rand() % 100 + 1;  // 1から100までのランダムな数字
+    target = rand() % 100 + 1;  // Random number between 1 and 100
 
-    printf("1から100までの数を当ててください。\n");
+    printf("Guess a number between 1 and 100.\n");
 
-    // 正解するまで繰り返す
+    // Loop until the correct guess is made
     while (guess != target) {
-        printf("数を入力してください: ");
+        printf("Enter your guess: ");
         scanf("%d", &guess);
 
         if (guess > target) {
-            printf("もっと小さいです。\n");
+            printf("Too high.\n");
         } else if (guess < target) {
-            printf("もっと大きいです。\n");
+            printf("Too low.\n");
         } else {
-            printf("正解です！\n");
+            printf("Correct!\n");
         }
     }
 
