@@ -10,7 +10,7 @@ This is a simple number guessing game created in C language. The program generat
 
 ## How to Run
 
-1. **Clone the repository:**:
+1. **Clone the repository**:
 
     ```bash
     git clone https://github.com/kkato/number-guessing-game.git
